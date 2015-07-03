@@ -1,0 +1,28 @@
+Virtualenvs+Django+Pythonanywhere
+
+在虚拟机中建立django项目
+https://www.pythonanywhere.com/wiki/VirtualEnvForNewerDjango
+
+建立虚拟机：
+https://www.pythonanywhere.com/wiki/Virtualenvs
+
+
+1.创建虚拟机
+2.在虚拟机上安装python环境
+3.从github复制project
+
+直接用github clone https://username:password@github.com/sunshinezzz/repo_name.git
+复制项目到虚拟机上
+进入虚拟机：workon virtualenvs_name
+退出虚拟机:deactivate 
+4.设置web
+add a new web app->manual configuration
+完成后要设置virtualenvs的路径以及wsgi文件
+5.修改文件 都可以在files一栏
+
+
+设置django css
+https://www.pythonanywhere.com/wiki/DjangoStaticFiles
+set STATIC_ROOT in settings.py
+run manage.py collectstatic
+set up a Static Files entry on the PythonAnywhere Web tab.
