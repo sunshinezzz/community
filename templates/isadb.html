@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>亚热带农业生态研究所数据库</title>
+<!--
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-2.1.3.min.js"></script>
+    -->
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/isadb.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!--<nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">首页</span></a></li>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">数据集浏览</a></li>
+                <li><a href="#">地图浏览</a></li>
+                <li><a href="#">查找数据库</a></li>
+                <li><a href="#">数据检索</a></li>
+                <li><a href="#">数据服务</a></li>
+                <li><a href="#">使用指南</a></li>
+                <li><a href="#">服务案例</a></li>
+            </ul>
+        </div>
+    </nav>
+    -->
+    <!--
+    位置固定navbar-fixed-top
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    -->
+    <div class="navbar  navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">ISA数据中心</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> 首页</span></a></li>
+                    <li><a href="http://www.baidu.com"><span class="glyphicon glyphicon-eye-open"> 数据集浏览</span></a></li>
+                    <li><a href="http://www.qq.com"><span class="glyphicon glyphicon-map-marker"> 地图浏览</span></a></li>
+                    <li><a href="http://www.qq.com"><span class="glyphicon glyphicon-search"> 数据检索</span></a></li>
+                    <li><a href="http://www.qq.com"><span class="glyphicon glyphicon-download"> 数据服务</span></a></li>
+                    <li><a href="http://www.qq.com"><span class="glyphicon glyphicon-book"> 使用指南</span></a></li>
+                    <li><a href="http://www.qq.com"><span class="glyphicon glyphicon-briefcase"> 服务案例</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" style="margin-top: 12px; margin-right: 0px">
+                    <a href="#">注册 |</a>
+                    <a href="#">登录</a>
+                </ul>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </div>
+    <!--
+    超大屏幕
+    <div class="jumbotron">
+     -->
+    <div class="container">
+        <div class="row">
+            <div class="pageone col-md-3">
+                <div class="list-navigation list-group">
+                   <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-folder-open"> 数据集导航</span></a>
+                   <a href="http://baidu.com" class="list-group-item">农田生物监测数据</a>
+                   <a href="http://baidu.com" class="list-group-item">农田土壤监测数据</a>
+                   <a href="http://baidu.com" class="list-group-item">农田水分监测数据</a>
+                   <a href="http://baidu.com" class="list-group-item">人工大气监测数据</a>
+                   <a href="http://baidu.com" class="list-group-item">自动站大气监测数据</a>
+                   <a href="http://baidu.com" class="list-group-item">
+                       <span class="badge">新</span>
+                       研究成果与收集数据
+                   </a>
+               </div>
+                <div class="list-menu list-group">
+                    <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-tree-conifer"> 野外台站导航</span></a>
+                    <a href="http://baidu.com" class="list-group-item">洞庭湖站</a>
+                    <a href="http://baidu.com" class="list-group-item">环江站</a>
+                    <a href="http://baidu.com" class="list-group-item">桃源站</a>
+                    <a href="http://baidu.com" class="list-group-item">
+                        <span class="badge">新</span>
+                        长沙站
+                    </a>
+                </div>
+
+                <div class="list-static list-group">
+                   <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-tags"> 数据量统计</span></a>
+                   <a href="#" class="list-group-item">
+                       <p class="list-group-item-text">
+                       <li>reserved</li>
+                       <li>reserved</li>
+                       <li>reserved</li>
+                       <li>reserved</li>
+                       </p>
+                   </a>
+               </div>
+                <div class="list-contact list-group">
+                   <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-user"> 联系信息</span></a>
+                   <a href="#" class="list-group-item">
+                       <p class="list-group-item-text">
+                           <li>联系人：  黄允巍</li>
+                           <li>联系电话：0731-84615206</li>
+                           <li>Email：   yw@isa.ac.cn</li>
+                           <li>单位：中科院亚热带农业生态所</li>
+                       </p>
+                   </a>
+               </div>
+           </div>
+            <div class="col-md-6">
+                 <div class="panel-intro panel-primary">
+                     <div class="panel-heading">
+                         <h3 class="panel-title">数据库简介</h3>
+                     </div>
+                     <div class="panel-body">
+                         小气候区域背景数据集
+                     </div>
+                     <table class="table">
+                         <tbody>
+                         <tr>
+                             <td>
+                                 <img src="../static/images/total.gif">
+                             </td>
+                             <td>
+                                 <table>
+                                     <tbody>
+                                     <tr>
+                                         <td>
+                                             亚热带农业生态系统要素专业数据库是中国科学院亚热带农业生态研究所为方便国内科研人员对中国亚热带区域的生态系统要素的室外监测、室内分析及科学分析等数据的访问、下载和利用而建立的一个专业数据库。室外监测像数据主要来自于环江喀斯特、桃源红壤丘陵、...
+                                             <a href="#">[详情]</a>
+                                         </td>
+                                     </tr>
+                                     </tbody>
+                                 </table>
+                             </td>
+                         </tr>
+                         </tbody>
+                     </table>
+                 </div>
+                 <div class="panel panel-primary">
+                     <div class="panel-heading">
+                         <h3 class="panel-title">推荐数据库</h3>
+                     </div>
+                     <div class="panel-body">
+                         小气候区域背景数据集
+                     </div>
+                     <table class="table">
+                         <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../static/images/taoyuan.gif">
+                                </td>
+                                <td>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    以亚热带三个野外试验站监测的降雨量，风速，风向为数据对象，包含了降雨量，降雨极大值和极大风速，极大风风向，以及其出现的日期，并记录了逐时的风...
+                                                    <a href="#">[详情]</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://rsr.csdb.cn/rss01001Action.do?fromAction=rsl06005Action.do&sheetId=1239&templateNameEn=DbMetadata09&owerServerName=#pageStartPost">元数据|</a>
+
+                                                    <a href="http://www.subtraes.csdb.cn/page/showItem.vpage?id=cms.commenddb/1">共享声明|</a>
+
+                                                    <a href="http://159.226.152.15/index.jsp">访问此库</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                         </tbody>
+                     </table>
+
+                     <div class="panel-body">
+                         研究成果与调研数据集
+                     </div>
+                     <table class="table">
+                         <tbody>
+                         <tr>
+                             <td>
+                                 <img src="../static/images/huanjiang.gif">
+                             </td>
+                             <td>
+                                 <table>
+                                     <tbody>
+                                     <tr>
+                                         <td>
+                                             本数据库以亚热带农业生态研究中用到调研数据或研究产生的科研成果数据，包含遥感影像，高程，坡度，坡向等数据，是一个主要以科研成果的原始数据和以....
+                                             <a href="#">[详情]</a>
+                                         </td>
+                                     </tr>
+                                     </tbody>
+                                 </table>
+                                 <table>
+                                     <tbody>
+                                     <tr>
+                                         <td>
+                                             <a href="http://rsr.csdb.cn/rss01001Action.do?fromAction=rsl06005Action.do&sheetId=1240&templateNameEn=DbMetadata09&owerServerName=#pageStartPost">元数据|</a>
+
+                                             <a href="http://www.subtraes.csdb.cn/page/showItem.vpage?id=cms.commenddb/1">共享声明|</a>
+
+                                             <a href="http://159.226.152.15/index.jsp">访问此库</a>
+                                         </td>
+                                     </tr>
+                                     </tbody>
+                                 </table>
+                             </td>
+                         </tr>
+                         </tbody>
+                     </table>
+
+                     <div class="panel-body">
+                         农田作物产量数据集
+                     </div>
+                     <table class="table">
+                         <tbody>
+                         <tr>
+                             <td>
+                                 <img src="../static/images/dongtinghu.gif">
+                             </td>
+                             <td>
+                                 <table>
+                                     <tbody>
+                                     <tr>
+                                         <td>
+                                             以亚热带农作物产量为主要数据，包含各种作物的轮作系统，灌溉方式，播种面积，肥力投入情况，土壤复种指数，以及收获期的株植性状、单产等要素的一个...
+                                             <a href="#">[详情]</a>
+                                         </td>
+                                     </tr>
+                                     </tbody>
+                                 </table>
+                                 <table>
+                                     <tbody>
+                                     <tr>
+                                         <td>
+                                             <a href="http://rsr.csdb.cn/rss01001Action.do?fromAction=rsl06005Action.do&sheetId=1239&templateNameEn=DbMetadata09&owerServerName=#pageStartPost">元数据|</a>
+
+                                             <a href="http://www.subtraes.csdb.cn/page/showItem.vpage?id=cms.commenddb/1">共享声明|</a>
+
+                                             <a href="http://159.226.152.15/index.jsp">访问此库</a>
+                                         </td>
+                                     </tr>
+                                     </tbody>
+                                 </table>
+                             </td>
+                         </tr>
+                         </tbody>
+                     </table>
+                 </div>
+
+
+             </div>
+            <div class="aside col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-bullhorn"> 最新公告</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table_all table_l121_3 table_l121_3_1" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td align="left" valign="top" class="content_all content_l121_3 content_l121_3_1">
+                                        <div style="width:100%;" id="cmsBodyInner">
+                                            <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="150" scrollamount="10" scrolldelay="500" style="height: 150px;">
+                                                <div style="line-height:18px;padding:0 0 0 0">
+                                                    <li class="item"><a href="/page/showItem.vpage?id=cms.news/11" target="_blank">数据整理中(2010-10-01)</a></li>
+                                                </div>
+                                            </marquee>
+                                            <p align="right" style="padding:0 6 6 0">
+                                                <a href="#" style="text-decoration: none;">	 更多 &gt;&gt;&gt;</a>
+                                            </p></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bottom_l121_3 bottom_l121_3_1">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-file"> 元数据</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <li><a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=207&templateNameEn=DbMetadata09&owerServerName=">调研收集资料</a></li>
+                        <li><a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=205&templateNameEn=DbMetadata09&owerServerName=">农业生态系统要素数据</a></li>
+                        <li><a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=204&templateNameEn=DbMetadata09&owerServerName=">亚热带农业生态系统要素数据库</a></li>
+                        <li><a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=206&templateNameEn=DbMetadata09&owerServerName=">农业生态系统基本要素</a></li>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-info-sign"> 联系客服</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <li><a href="http://drs.csdb.cn/index401Action.do?customId=00195"><span class="glyphicon glyphicon-phone-alt"> 咨询台</span></a></li>
+                        <li><a href="http://drs.csdb.cn/cnug0701Action.do?customId=00195&flg=true"><span class="glyphicon glyphicon-edit"> 意见反馈</span></a></li>
+                        <li><a href="http://drs.csdb.cn/faqs0101Action.do?customId=00195&flg=false"><span class="glyphicon glyphicon-question-sign"> 常见问题</span></a></li>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-briefcase"> 服务案例</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <li>
+                            <a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=1881&templateNameEn=SerCase&owerServerName=">
+                                973课题“西南喀斯特山地土壤侵蚀过程与水土流失危险度评价”
+                            </a>
+                        </li>
+                        <li><a href="http://rsr.csdb.cn/rss01007Action.do?fromAction=rsl01005Action.do&sheetId=1880&templateNameEn=SerCase&owerServerName=">
+                            “西南喀斯特生态系统退化机制与适应性修复试验示范研究”
+                        </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-link"> 友情链接</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <li><a href="http://www.cas.cn/">中国科学院</span></a></li>
+                        <li><a href="http://www.isa.ac.cn/">中国科学院亚热带农业生态研究所</span></a></li>
+                        <li><a href="http://159.226.152.80/">中国科学院环江喀斯特生态实验站</span></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>
+                        @Copyright
+                        <a href="http://baidu.com">中科院亚热带农业生态研究所</a>
+                    </span>
+                     |
+                    <span>
+                        <a href="http://baidu.com">中科院亚热带农业生态研究所</a>
+                    </span>
+                     |
+                    <span>备案序号：京ICP备05036949号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

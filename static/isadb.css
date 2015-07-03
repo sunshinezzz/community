@@ -1,0 +1,49 @@
+.well-test{
+    background-color: #fff;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 200px;
+    min-height: 20px;
+    padding: 19px;
+    margin-top: 300px;
+}
+
+.carousel-inner img{
+    display: block;
+    line-height: 1;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.carousel-caption h4{
+    color: white;
+}
+.carousel-control.left{
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-repeat: repeat-x;
+    /*  如需按钮位置固定 则用  position: fixed;*/
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+    background-repeat: repeat-x;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
